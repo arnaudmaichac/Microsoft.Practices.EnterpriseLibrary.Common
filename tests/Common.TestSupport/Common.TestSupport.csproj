@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net45;netcoreapp2.1;netcoreapp3.0</TargetFrameworks>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Common.TestSupport</RootNamespace>
+    <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Common.TestSupport</AssemblyName>
+    <AssemblyTitle>Enterprise Library Shared Tests Support</AssemblyTitle>
+    <Description>Enterprise Library Shared Tests Support</Description>
+    <Version>6.0.0.0</Version>
+    <FileVersion>6.0.1311.0</FileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>..\Tests.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CodeAnalysisRuleSet>..\Tests.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.UnitTestFramework.Extensions" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Common.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
+    <PackageReference Include="System.Diagnostics.EventLog">
+      <Version>4.6.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.1'">
+    <PackageReference Include="System.Diagnostics.EventLog">
+      <Version>4.6.0</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>

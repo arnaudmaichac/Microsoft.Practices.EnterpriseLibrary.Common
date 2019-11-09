@@ -1,4 +1,4 @@
-:warning: **This project is no longer under development. It is hosted here for historical reasons.**
+[![Build Status](https://dev.azure.com/arnaudmaichac1/Microsoft.Practices.EnterpriseLibrary/_apis/build/status/arnaudmaichac.Microsoft.Practices.EnterpriseLibrary.Common?branchName=master)](https://dev.azure.com/arnaudmaichac1/Microsoft.Practices.EnterpriseLibrary/_build/latest?definitionId=3&branchName=master)
 
 # COMMON INFRASTRUCTURE PRE-RELEASE
 https://github.com/MicrosoftArchive/enterprise-library
