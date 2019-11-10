@@ -7,17 +7,17 @@
     <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Common</AssemblyName>
     <Product>Microsoft Enterprise Library</Product>
     <Description>The Enterprise Library Common assembly contains elements that are shared among multiple application blocks. By supplying a set of commonly used functions to all the application blocks, the Common assembly reduces the dependency of one application block on another.</Description>
-    <Version>6.0.1</Version>
-    <FileVersion>6.0.1312.0</FileVersion>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
     <InformationalVersion>6.0.1311-prerelease</InformationalVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageTags>entlib entlib6 Enterprise Library common core LOB OSS dotnetcore</PackageTags>
+    <PackageTags>entlib entlib6 Enterprise Library common .NET Core .NETCore dotnetcore coreclr</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <Authors>Arnaud Maichac</Authors>
     <Company>Arnaud Maichac</Company>
     <RepositoryUrl>https://github.com/arnaudmaichac/Microsoft.Practices.EnterpriseLibrary.Common</RepositoryUrl>
-    <PackageId>EnterpriseLibrary.Common.Core</PackageId>
+    <PackageId>Practices.EnterpriseLibrary.Common.Core</PackageId>
     <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
