@@ -27,3 +27,15 @@ steps:
     command: test
     projects: 'tests/**/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet pack'
+  inputs:
+    command: pack
+    packagesToPack: src/Common.csproj
+    packDirectory: '$(Build.ArtifactStagingDirectory)/packages'
+    arguments: '--configuration $(buildConfiguration)'
+    nobuild: true
+
+- publish: '$(Build.ArtifactStagingDirectory)/packages'
+  artifact: 'packages'
