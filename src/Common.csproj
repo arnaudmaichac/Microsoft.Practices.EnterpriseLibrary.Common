@@ -12,12 +12,13 @@
     <InformationalVersion>6.0.1311-prerelease</InformationalVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageTags>entlib entlib6 Enterprise Library common core LOB futures OSS</PackageTags>
+    <PackageTags>entlib entlib6 Enterprise Library common core LOB OSS dotnetcore</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Authors>Microsoft; Arnaud Maichac</Authors>
-    <Company>Microsoft; patterns-and-practices; Arnaud Maichac</Company>
+    <Authors>Arnaud Maichac</Authors>
+    <Company>Arnaud Maichac</Company>
     <RepositoryUrl>https://github.com/arnaudmaichac/Microsoft.Practices.EnterpriseLibrary.Common</RepositoryUrl>
-    <PackageId>Microsoft.Practices.EnterpriseLibrary.Common.Core</PackageId>
+    <PackageId>EnterpriseLibrary.Common.Core</PackageId>
+    <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DefineConstants>TRACE;WMINET10;DEBUG</DefineConstants>
