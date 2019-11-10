@@ -54,24 +54,24 @@
     <ProjectReference Include="..\Common.TestSupport\Common.TestSupport.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ComposedConfigurationFile.config">
+    <None Update="ComposedConfigurationFile.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <EmbeddedResource Include="Configuration\ConfigSourceWithInvalidType.config" />
     <None Include="Configuration\dummy.external.config" />
-    <None Include="MergedConfigurationFile.config">
+    <None Update="ExternalFileSource.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="ExternalFileSource.config">
+    <None Update="MergedConfigurationFile.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Configuration\test.exe.config">
+    <None Update="Configuration\test.exe.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Microsoft.Practices.EnterpriseLibrary.Common.Tests.dll.config">
+    <None Update="Microsoft.Practices.EnterpriseLibrary.Common.Tests.dll.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="test.exe.config">
+    <None Update="test.exe.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
