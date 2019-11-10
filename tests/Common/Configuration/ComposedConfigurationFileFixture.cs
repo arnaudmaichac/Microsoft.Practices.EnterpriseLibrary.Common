@@ -250,13 +250,10 @@ namespace Microsoft.Practices.EnterpriseLibrary.Common.Tests.Configuration
         {
             section = CompositeSource.GetSection(FileSourceDummySectionName) as DummySection;
 
-            File.SetLastWriteTime(@"ExternalFileSource.config", DateTime.Now);
+            File.SetLastWriteTime(@"ExternalFileSource.config", DateTime.Now.AddSeconds(1.0));
 
             // Wait for at least two events
             Assert.IsTrue(waitForChangedEvents.Wait(30000), "timed out");
-
-            // And give it a little more time in case more come in
-            Thread.Sleep(3000);
         }
 
         [TestMethod]

@@ -10,7 +10,7 @@
     <Version>6.0.0.0</Version>
     <FileVersion>6.0.1311.0</FileVersion>
     <InformationalVersion>6.0.1311-prerelease</InformationalVersion>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>entlib entlib6 Enterprise Library common core LOB futures OSS</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
